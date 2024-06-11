@@ -1,0 +1,259 @@
+html {
+    overflow-x: hidden;
+}
+
+/* 导航栏 */
+.ws-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #2f363c;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
+}
+
+.ws-header:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+    content: '';
+}
+
+/* 导航栏背景颜色 */
+.ws-bg-light {
+    background-color: #fff !important;
+}
+
+.ws-header-menu .layui-this a, .ws-header-menu .layui-nav-item a:hover {
+    color: #16baaa !important;
+}
+
+.ws-header-menu .layui-nav-bar, .ws-header-menu .layui-nav-item:after, .ws-header-menu .layui-this:after {
+    background-color: #16baaa !important;
+}
+
+/* 导航栏LOGO */
+.ws-logo {
+    position: absolute;
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.ws-logo img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+.ws-logo span {
+    font-weight: bolder;
+    padding-left: 30px;
+}
+
+/* 导航栏菜单 */
+.ws-header-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.ws-header-menu > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ws-header-menu .layui-nav {
+    padding: 0;
+}
+
+.ws-header-menu .layui-nav .layui-nav-item {
+    margin-left: 0;
+}
+
+.ws-header-menu .layui-nav .layui-nav-item[mobile] {
+    display: none;
+}
+
+.ws-header-menu .layui-nav .layui-nav-item a {
+    padding: 0 16px;
+}
+
+.ws-header .layui-container {
+    height: 100%;
+}
+
+.layui-nav-tree.layui-bg-gray a, .layui-nav.layui-bg-gray .layui-nav-item a {
+    color: #373737;
+}
+
+/* 页脚 */
+.ws-footer {
+    background: #2f363c;
+}
+
+.ws-footer .permission {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.ws-footer .permission p {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+/* 页面组件 */
+.ws-container {
+    padding-top: 60px;
+    min-height: calc(100vh - 210px);
+}
+
+.section {
+    width: calc(100% - 30px);
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.section h1 {
+    color: #16baaa;
+}
+
+.section h2 {
+    font-size: 24px;
+}
+
+.section p {
+    line-height: 150%;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.section a {
+    color: #16baaa !important;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.section a:focus, a:hover {
+    color: #16b777 !important;
+    text-decoration: underline;
+}
+
+.section a.hover {
+    text-decoration: none;
+}
+
+.section a.hover:hover {
+    text-decoration: underline;
+}
+
+.layui-table-header, thead tr {
+    background-color: #F8FCF9;
+}
+
+.layui-form-select dl dd.layui-this {
+    color: #16baaa !important;
+}
+
+.layui-input:focus, .layui-textarea:focus {
+    border-color: #16baaa !important;
+}
+
+.layui-table-page {
+    text-align: center;
+}
+
+.layui-table-page .layui-laypage a, .layui-table-page .layui-laypage span.layui-laypage-curr, .layui-laypage span {
+    color: #16baaa !important;
+    font-size: 14px;
+}
+
+.layui-colla-title {
+    font-size: 18px;
+    height: 52px;
+    line-height: 52px;
+    padding-left: 40px;
+    background-color: #F8FCF9;
+    font-weight: bolder;
+}
+
+.layui-colla-icon {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.layui-elem-quote {
+    border-left-color: #16baaa !important;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.layui-elem-field {
+    border-color: #16baaa !important;
+}
+
+.layui-form-pane .layui-form-label {
+    background-color: #F8FCF9 !important;
+    width: 155px;
+}
+
+.layui-form-pane .layui-input-block {
+    padding-left: 45px;
+}
+
+.layui-form-checked[lay-skin=primary] > i {
+    border-color: #16baaa !important;
+    background-color: #16baaa !important;
+}
+
+/* 自适应屏幕 */
+@media screen and (max-width: 1399.98px) {
+    .layui-container {
+        width: auto !important;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .ws-container {
+        width: 100% !important;
+        overflow: hidden;
+    }
+
+    .ws-header-menu .layui-nav .layui-nav-item {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .ws-logo {
+        left: 50%;
+        margin-left: -60px;
+    }
+
+    .ws-header-menu .layui-nav {
+        position: fixed;
+        top: 61px;
+        right: -100%;
+        width: 100%;
+        text-align: center;
+        transition: all .3s;
+    }
+
+    .ws-header-menu .layui-nav {
+        z-index: 1003;
+        height: 60px;
+        border-radius: 0;
+        box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
+    }
+}

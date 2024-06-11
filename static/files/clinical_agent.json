@@ -1,0 +1,82 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "model": "InternLM2-20B-Chat",
+      "institution": "Shanghai AI Laboratory",
+      "url": "https://huggingface.co/internlm/internlm2-chat-20b",
+      "DWR": 14.91,
+      "CDR": 31.4,
+      "Acceptability": 11.11,
+      "Avg": 51.98,
+      "Human": 54.66,
+      "GPT": 85.09
+    },
+    {
+      "model": "GPT-4",
+      "institution": "OpenAI",
+      "url": "https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo",
+      "DWR": 12.7,
+      "CDR": 33.27,
+      "Acceptability": 11.37,
+      "Avg": 49.45,
+      "Human": 55.9,
+      "GPT": 90.93
+    },
+    {
+      "model": "Gemini-Pro",
+      "institution": "Google",
+      "url": "https://ai.google.dev/models/gemini",
+      "DWR": 14.48,
+      "CDR": 30.13,
+      "Acceptability": 10.85,
+      "Avg": 50.63,
+      "Human": 58.84,
+      "GPT": 79.61
+    },
+    {
+      "model": "Yi-34B-Chat",
+      "institution": "01 AI",
+      "url": "https://huggingface.co/01-ai/Yi-34B-Chat",
+      "DWR": 14.3,
+      "CDR": 26.13,
+      "Acceptability": 9.25,
+      "Avg": 50.53,
+      "Human": 52.42,
+      "GPT": 86.61
+    },
+    {
+      "model": "Agent#3@1",
+      "institution": "Ours",
+      "url": "index.html",
+      "DWR": 14.3,
+      "CDR": 52.73,
+      "Acceptability": 17.82,
+      "Avg": 54.46,
+      "Human": 59.42,
+      "GPT": 85.61
+    },
+    {
+      "model": "Agent#1@3",
+      "institution": "Ours",
+      "url": "index.html",
+      "DWR": 14.3,
+      "CDR": 54.0,
+      "Acceptability": 18.22,
+      "Avg": 51.66,
+      "Human": 62.76,
+      "GPT": 89.4
+    },
+    {
+      "model": "Agent#1@1",
+      "institution": "Ours",
+      "url": "index.html",
+      "DWR": 17.0,
+      "CDR": 35.13,
+      "Acceptability": 12.57,
+      "Avg": 53.02,
+      "Human": 57.84,
+      "GPT": 82.46
+    }
+  ]
+}
