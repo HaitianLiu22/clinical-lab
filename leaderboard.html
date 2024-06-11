@@ -34,7 +34,7 @@
                 </li>
                 <li class="layui-nav-item">
                     <a href="data.html" class="layui-font-16">
-                        <i class="layui-icon layui-icon-table layui-font-16"></i>&nbsp;&nbsp;Data
+                        <i class="layui-icon layui-icon-form layui-font-16"></i>&nbsp;&nbsp;Data
                     </a>
                 </li>
                 <li class="layui-nav-item">
@@ -49,7 +49,7 @@
                 </li>
                 <li class="layui-nav-item layui-this">
                     <a href="leaderboard.html" class="layui-font-16">
-                        <i class="layui-icon layui-icon-template-1 layui-font-16"></i>&nbsp;&nbsp;Leaderboard
+                        <i class="layui-icon layui-icon-flag layui-font-16"></i>&nbsp;&nbsp;Leaderboard
                     </a>
                 </li>
                 <li class="layui-nav-item">
@@ -82,7 +82,7 @@
             <div id="echarts-heatmap" style="width: 100%; height:500px; padding-top: 50px;"></div>
             <br><br>
             <table class="layui-table"
-                   lay-options="{url:'static/files/score_weighted_average(2024-05-27).json', skin:'line', even:true, size: 'md'}">
+                   lay-options="{url:'static/files/clinical_bench.json', skin:'line', even:true, size: 'md'}">
                 <thead>
                 <tr>
                     <th lay-options="{field:'model', templet:'#table-templet-model', minWidth:200, align:'center'}"
@@ -140,93 +140,93 @@
             </table>
             <script type="text/html" id="table-templet-acc">
                 {{# if(d.model === "InternLM2-20B-Chat") { }}
-                <b>{{'🏆'+d.overall.guide_departmental_accuracy}}</b>
+                <b>{{d.Acc}}</b>
                 {{# } else { }}
-                {{d.overall.guide_departmental_accuracy}}
+                {{d.Acc}}
                 {{# } }}
             </script>
             <script type="text/html" id="table-templet-difr">
                 {{# if(d.model === "Yi-34B-Chat") { }}
-                <b>{{'🏆'+d.overall.guide_departmental_instruction_following_rate}}</b>
+                <b>{{d.DIFR}}</b>
                 {{# } else { }}
-                {{d.overall.guide_departmental_instruction_following_rate}}
+                {{d.DIFR}}
                 {{# } }}
             </script>
             <script type="text/html" id="table-templet-pd">
                 {{# if(d.model === "InternLM2-20B-Chat") { }}
-                <b>{{'🏆'+d.overall.preliminary_diagnosis}}</b>
+                <b>{{d.PD}}</b>
                 {{# } else { }}
-                {{d.overall.preliminary_diagnosis}}
+                {{d.PD}}
                 {{# } }}
             </script>
             <script type="text/html" id="table-templet-db">
                 {{# if(d.model === "Gemini-Pro") { }}
-                <b>{{'🏆'+d.overall.diagnostic_basis}}</b>
+                <b>{{d.DB}}</b>
                 {{# } else { }}
-                {{d.overall.diagnostic_basis}}
+                {{d.DB}}
                 {{# } }}
             </script>
             <script type="text/html" id="table-templet-dd">
                 {{# if(d.model === "Yi-34B-Chat") { }}
-                <b>{{'🏆'+d.overall.differential_diagnosis}}</b>
+                <b>{{d.DD}}</b>
                 {{# } else { }}
-                {{d.overall.differential_diagnosis}}
+                {{d.DD}}
                 {{# } }}
             </script>
             <script type="text/html" id="table-templet-fd">
                 {{# if(d.model === "GPT-4") { }}
-                <b>{{'🏆'+d.overall.principal_diagnosis}}</b>
+                <b>{{d.FD}}</b>
                 {{# } else { }}
-                {{d.overall.principal_diagnosis}}
+                {{d.FD}}
                 {{# } }}
             </script>
             <script type="text/html" id="table-templet-pt">
                 {{# if(d.model === "Claude-3") { }}
-                <b>{{'🏆'+d.overall.therapeutic_principle}}</b>
+                <b>{{d.PT}}</b>
                 {{# } else { }}
-                {{d.overall.therapeutic_principle}}
+                {{d.PT}}
                 {{# } }}
             </script>
             <script type="text/html" id="table-templet-tp">
                 {{# if(d.model === "Claude-3") { }}
-                <b>{{'🏆'+d.overall.treatment_plan}}</b>
+                <b>{{d.TP}}</b>
                 {{# } else { }}
-                {{d.overall.treatment_plan}}
+                {{d.TP}}
                 {{# } }}
             </script>
             <script type="text/html" id="table-templet-id">
                 {{# if(d.model === "WiNGPT2-14B-Chat") { }}
-                <b>{{'🏆'+d.overall.imaging_diagnosis}}</b>
+                <b>{{d.ID}}</b>
                 {{# } else { }}
-                {{d.overall.imaging_diagnosis}}
+                {{d.ID}}
                 {{# } }}
             </script>
             <script type="text/html" id="table-templet-dwr">
                 {{# if(d.model === "InternLM2-20B-Chat") { }}
-                <b>{{'🏆'+d.overall.DWR}}</b>
+                <b>{{d.DWR}}</b>
                 {{# } else { }}
-                {{d.overall.DWR}}
+                {{d.DWR}}
                 {{# } }}
             </script>
             <script type="text/html" id="table-templet-cdr">
                 {{# if(d.model === "GPT-4") { }}
-                <b>{{'🏆'+d.overall.CDR}}</b>
+                <b>{{d.CDR}}</b>
                 {{# } else { }}
-                {{d.overall.CDR}}
+                {{d.CDR}}
                 {{# } }}
             </script>
             <script type="text/html" id="table-templet-acceptability">
                 {{# if(d.model === "GPT-4") { }}
-                <b>{{'🏆'+d.overall.Acceptability}}</b>
+                <b>{{d.Acceptability}}</b>
                 {{# } else { }}
-                {{d.overall.Acceptability}}
+                {{d.Acceptability}}
                 {{# } }}
             </script>
             <script type="text/html" id="table-templet-avg">
                 {{# if(d.model === "InternLM2-20B-Chat") { }}
-                <b>{{'🏆'+d.overall.average}}</b>
+                <b>{{d.Avg}}</b>
                 {{# } else { }}
-                {{d.overall.average}}
+                {{d.Avg}}
                 {{# } }}
             </script>
         </div>
@@ -277,42 +277,42 @@
             </table>
             <script type="text/html" id="table-templet-as-dwr">
                 {{# if(d.model === "Agent#1@1") { }}
-                <b>{{'🏆'+d.DWR}}</b>
+                <b>{{d.DWR}}</b>
                 {{# } else { }}
                 {{d.DWR}}
                 {{# } }}
             </script>
             <script type="text/html" id="table-templet-as-cdr">
                 {{# if(d.model === "Agent#1@3") { }}
-                <b>{{'🏆'+d.CDR}}</b>
+                <b>{{d.CDR}}</b>
                 {{# } else { }}
                 {{d.CDR}}
                 {{# } }}
             </script>
             <script type="text/html" id="table-templet-as-acceptability">
                 {{# if(d.model === "Agent#1@3") { }}
-                <b>{{'🏆'+d.Acceptability}}</b>
+                <b>{{d.Acceptability}}</b>
                 {{# } else { }}
                 {{d.Acceptability}}
                 {{# } }}
             </script>
             <script type="text/html" id="table-templet-as-avg">
                 {{# if(d.model === "Agent#3@1") { }}
-                <b>{{'🏆'+d.Avg}}</b>
+                <b>{{d.Avg}}</b>
                 {{# } else { }}
                 {{d.Avg}}
                 {{# } }}
             </script>
             <script type="text/html" id="table-templet-hs">
                 {{# if(d.model === "Agent#1@3") { }}
-                <b>{{'🏆'+d.Human}}</b>
+                <b>{{d.Human}}</b>
                 {{# } else { }}
                 {{d.Human}}
                 {{# } }}
             </script>
             <script type="text/html" id="table-templet-gs">
                 {{# if(d.model === "GPT-4") { }}
-                <b>{{'🏆'+d.GPT}}</b>
+                <b>{{d.GPT}}</b>
                 {{# } else { }}
                 {{d.GPT}}
                 {{# } }}
@@ -328,7 +328,6 @@
                 difficulty, efficiency, and length.
             </p>
             <div id="echarts-line" style="width: 100%; height:500px; padding-top: 50px;"></div>
-            <br><br>
         </div>
     </div>
     <br><br><br><br>

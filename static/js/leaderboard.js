@@ -20,6 +20,7 @@ layui.use(['jquery'], function () {
                 bottom: '35%',
             },
             xAxis: {
+                name: 'Dept.',
                 type: 'category',
                 data: x_dept,
                 axisLabel: {
@@ -31,6 +32,7 @@ layui.use(['jquery'], function () {
                 }
             },
             yAxis: {
+                name: 'Model',
                 type: 'category',
                 data: y_model,
                 axisLabel: {
@@ -267,6 +269,7 @@ layui.use(['jquery'], function () {
                 bottom: '20%',
             },
             xAxis: {
+                name: 'Model',
                 type: 'category',
                 data: x_model,
                 axisLabel: {
@@ -275,6 +278,7 @@ layui.use(['jquery'], function () {
                 },
             },
             yAxis: {
+                name: 'Score',
                 type: 'value',
                 axisLine: {
                     show: true
