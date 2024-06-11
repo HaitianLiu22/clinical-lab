@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ClinicalLab</title>
+    <meta name="keywords" content="ClinicalLab">
+    <meta name="description" content="ClinicalLab">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <link rel="icon" href="static/images/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="static/layui/css/layui.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+<!-- 导航栏部分 -->
+<div class="layui-header ws-header ws-bg-light">
+    <div class="layui-container">
+        <!-- LOGO -->
+        <div class="ws-logo">
+            <a href="index.html">
+                <img src="static/images/logo.png" alt="logo">
+            </a>
+            <span class="layui-font-green layui-font-24">ClinicalLab</span>
+        </div>
+        <!-- 菜单 -->
+        <div class="ws-header-menu">
+            <ul class="layui-nav layui-bg-gray ws-bg-light">
+                <li class="layui-nav-item layui-this">
+                    <a href="index.html" class="layui-font-16">
+                        <i class="layui-icon layui-icon-home layui-font-16"></i>&nbsp;&nbsp;Home
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="data.html" class="layui-font-16">
+                        <i class="layui-icon layui-icon-table layui-font-16"></i>&nbsp;&nbsp;Data
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;" class="layui-font-16" target="_blank">
+                        <i class="layui-icon layui-icon-file-b layui-font-16"></i>&nbsp;&nbsp;Paper
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="https://github.com/WeixiangYAN/ClinicalLab" class="layui-font-16" target="_blank">
+                        <i class="layui-icon layui-icon-code-circle layui-font-16"></i>&nbsp;&nbsp;Code
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="leaderboard.html" class="layui-font-16">
+                        <i class="layui-icon layui-icon-template-1 layui-font-16"></i>&nbsp;&nbsp;Leaderboard
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="#submission" class="layui-font-16">
+                        <i class="layui-icon layui-icon-upload-drag layui-font-16"></i>&nbsp;&nbsp;Submission
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="#contact-us" class="layui-font-16">
+                        <i class="layui-icon layui-icon-email layui-font-16"></i>&nbsp;&nbsp;Contact Us
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 主体部分 -->
+<div class="ws-container">
+    <div id="title">
+        <div class="layui-container">
+            <div id="title-wrapper">
+                <img src="static/images/logo.png" alt="logo">
+                <p id="title-text">ClinicalLab</p>
+            </div>
+            <p id="subtitle-text">
+                Aligning Agents for Multi-Departmental Clinical
+                <br>
+                Diagnostics in the RealWorld
+                <br>
+                (2024)
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <div class="layui-container">
+        <div class="section">
+            <h1>Introduction</h1>
+            <br>
+            <p>
+                <b>ClinicalLab</b>, a comprehensive clinical diagnosis agent alignment suite. ClinicalLab includes <b>ClinicalBench</b>,
+                an end-to-end multi-departmental clinical diagnostic evaluation benchmark for evaluating medical agents
+                and LLMs. ClinicalBench is based on real cases that cover <b>24</b> departments and <b>150</b> diseases.
+                We ensure that ClinicalBench does not have data leakage. ClinicalLab also includes four novel metrics
+                (<b>ClinicalMetrics</b>) for evaluating the effectiveness of LLMs in clinical diagnostic tasks. We
+                evaluate <b>17</b> general and medical-domain LLMs and find that their performance varies significantly
+                across different departments. Based on these findings, in ClinicalLab, we propose <b>ClinicalAgent</b>,
+                an end-to-end clinical agent that aligns with real-world clinical diagnostic practices. We
+                systematically investigate the performance and applicable scenarios of variants of ClinicalAgent on
+                ClinicalBench. Our findings demonstrate the importance of aligning with modern medical practices in
+                designing medical agents.
+            </p>
+            <div class="introduction-box">
+                <img src="static/images/figure1.svg" alt="figure1">
+            </div>
+        </div>
+        <div class="section">
+            <h1>Related Links</h1>
+            <br>
+            <div class="layui-btn-container">
+                <button type="button" class="layui-btn layui-btn-radius layui-btn-primary layui-border-green"
+                        onclick="window.location.href='leaderboard.html'">🏆&nbsp;&nbsp;Leaderboard
+                </button>
+                <button type="button" class="layui-btn layui-btn-radius layui-btn-primary layui-border-orange"
+                        onclick="window.location.href='data.html'"><i class="layui-icon layui-icon-table"></i>&nbsp;&nbsp;Data
+                </button>
+                <button type="button" class="layui-btn layui-btn-radius layui-btn-primary layui-border-red"
+                        onclick="window.location.href='javascript:;'">📃&nbsp;&nbsp;Paper
+                </button>
+                <button type="button" class="layui-btn layui-btn-radius layui-btn-primary layui-border-purple"
+                        onclick="window.location.href='https://github.com/WeixiangYAN/ClinicalLab'"><i
+                        class="layui-icon layui-icon-github"></i>&nbsp;&nbsp;Github
+                </button>
+            </div>
+        </div>
+        <div class="section">
+            <h1>Citation</h1>
+            <br>
+            <div class="citation-container">
+                <pre class="citation-box" id="citation-text">
+@misc{yan2023codescope,
+      title={CodeScope: An Execution-based Multilingual Multitask Multidimensional Benchmark for Evaluating LLMs on Code Understanding and Generation},
+      author={Weixiang Yan and Haitian Liu and Yunkun Wang and Yunzhe Li and Qian Chen and Wen Wang and Tingyu Lin and Weishan Zhao and Li Zhu and Shuiguang Deng and Hari Sundaram},
+      year={2023},
+      eprint={2311.08588},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}</pre>
+                <button id="citation-btn" onclick="copyToClipboard()">Copy</button>
+            </div>
+        </div>
+        <div class="section" id="submission">
+            <h1>Submission</h1>
+            <br>
+            <p>
+                When you build an LLM that meets your expectations, you can submit your test results for official
+                reporting.
+                To submit your model evaluation results on CodeScope, please submit the following information:
+            </p>
+            <div class="layui-text layui-font-18" style="padding-left: 20px; line-height: 150%; text-align: justify;">
+                <ol>
+                    <li>The evaluation results of your LLM on each task of the CodeScope benchmark, please follow the
+                        evaluation metrics in our paper.
+                    </li>
+                    <li>Individual/Team Organization: The name of the organization where the individual or team appears
+                        in the leaderboard.
+                    </li>
+                    <li>Information about your LLM: The name of the LLM that appears in the leaderboard.</li>
+                    <li>Your paper information: If the LLM is from a published work, the name and URL of the paper will
+                        appear on the leaderboard.
+                    </li>
+                </ol>
+            </div>
+            <p>
+                Submit the above information by email to
+                <a href="mailto:yanweixiang.ywx@gmail.com" class="ext-link">yanweixiang.ywx@gmail.com</a>
+                and we will respond to your email within 72 hours.
+            </p>
+        </div>
+        <div class="section" id="contact-us">
+            <h1>Contact Us</h1>
+            <br>
+            <p>
+                Have any questions about CodeScope? Please contact us at
+                <a href="mailto:yanweixiang.ywx@gmail.com" class="ext-link">yanweixiang.ywx@gmail.com</a>
+                or create an issue on
+                <a href="https://github.com/WeixiangYAN/ClinicalLab" class="ext-link" target="_blank">Github</a>.
+            </p>
+        </div>
+    </div>
+    <br><br><br><br>
+</div>
+<!-- 页脚部分 -->
+<div class="ws-footer">
+    <div class="layui-container">
+        <div class="permission">
+            <p>© 2023 - 2024 Vaneval AI</p>
+        </div>
+    </div>
+</div>
+<script src="static/layui/layui.js"></script>
+<script src="static/js/main.js"></script>
+<script src="static/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ClinicalLab</title>
+    <meta name="keywords" content="ClinicalLab">
+    <meta name="description" content="ClinicalLab">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <link rel="icon" href="static/images/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="static/layui/css/layui.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+<!-- 导航栏部分 -->
+<div class="layui-header ws-header ws-bg-light">
+    <div class="layui-container">
+        <!-- LOGO -->
+        <div class="ws-logo">
+            <a href="index.html">
+                <img src="static/images/logo.png" alt="logo">
+            </a>
+            <span class="layui-font-green layui-font-24">ClinicalLab</span>
+        </div>
+        <!-- 菜单 -->
+        <div class="ws-header-menu">
+            <ul class="layui-nav layui-bg-gray ws-bg-light">
+                <li class="layui-nav-item">
+                    <a href="index.html" class="layui-font-16">
+                        <i class="layui-icon layui-icon-home layui-font-16"></i>&nbsp;&nbsp;Home
+                    </a>
+                </li>
+                <li class="layui-nav-item layui-this">
+                    <a href="data.html" class="layui-font-16">
+                        <i class="layui-icon layui-icon-table layui-font-16"></i>&nbsp;&nbsp;Data
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;" class="layui-font-16" target="_blank">
+                        <i class="layui-icon layui-icon-file-b layui-font-16"></i>&nbsp;&nbsp;Paper
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="https://github.com/WeixiangYAN/ClinicalLab" class="layui-font-16" target="_blank">
+                        <i class="layui-icon layui-icon-code-circle layui-font-16"></i>&nbsp;&nbsp;Code
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="leaderboard.html" class="layui-font-16">
+                        <i class="layui-icon layui-icon-template-1 layui-font-16"></i>&nbsp;&nbsp;Leaderboard
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="index.html#submission" class="layui-font-16">
+                        <i class="layui-icon layui-icon-upload-drag layui-font-16"></i>&nbsp;&nbsp;Submission
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="index.html#contact-us" class="layui-font-16">
+                        <i class="layui-icon layui-icon-email layui-font-16"></i>&nbsp;&nbsp;Contact Us
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 主体部分 -->
+<div class="ws-container">
+    <br><br>
+    <div class="layui-container">
+        <div class="section">
+            <h1>Data Processing</h1>
+            <br>
+            <p>
+                <b>ClinicalLab</b>, a comprehensive clinical diagnosis agent alignment suite. ClinicalLab includes <b>ClinicalBench</b>,
+                an end-to-end multi-departmental clinical diagnostic evaluation benchmark for evaluating medical agents
+                and LLMs. ClinicalBench is based on real cases that cover <b>24</b> departments and <b>150</b> diseases.
+                We ensure that ClinicalBench does not have data leakage. ClinicalLab also includes four novel metrics
+                (<b>ClinicalMetrics</b>) for evaluating the effectiveness of LLMs in clinical diagnostic tasks. We
+                evaluate <b>17</b> general and medical-domain LLMs and find that their performance varies significantly
+                across different departments. Based on these findings, in ClinicalLab, we propose <b>ClinicalAgent</b>,
+                an end-to-end clinical agent that aligns with real-world clinical diagnostic practices. We
+                systematically investigate the performance and applicable scenarios of variants of ClinicalAgent on
+                ClinicalBench. Our findings demonstrate the importance of aligning with modern medical practices in
+                designing medical agents.
+            </p>
+            <div class="introduction-box">
+                <img src="static/images/figure2.svg" alt="figure2">
+            </div>
+        </div>
+        <div class="section">
+            <h1>Data Statistics</h1>
+            <br>
+            <p>
+                <b>ClinicalLab</b>, a comprehensive clinical diagnosis agent alignment suite. ClinicalLab includes <b>ClinicalBench</b>,
+                an end-to-end multi-departmental clinical diagnostic evaluation benchmark for evaluating medical agents
+                and LLMs. ClinicalBench is based on real cases that cover <b>24</b> departments and <b>150</b> diseases.
+                We ensure that ClinicalBench does not have data leakage. ClinicalLab also includes four novel metrics
+                (<b>ClinicalMetrics</b>) for evaluating the effectiveness of LLMs in clinical diagnostic tasks. We
+                evaluate <b>17</b> general and medical-domain LLMs and find that their performance varies significantly
+                across different departments. Based on these findings, in ClinicalLab, we propose <b>ClinicalAgent</b>,
+                an end-to-end clinical agent that aligns with real-world clinical diagnostic practices. We
+                systematically investigate the performance and applicable scenarios of variants of ClinicalAgent on
+                ClinicalBench. Our findings demonstrate the importance of aligning with modern medical practices in
+                designing medical agents.
+            </p>
+            <div id="echarts-pie" style="width: 100%; height:500px; padding-top: 50px;"></div>
+        </div>
+        <div class="section">
+            <h1>Data Apply</h1>
+            <br>
+            <p>
+                <b>ClinicalLab</b>, a comprehensive clinical diagnosis agent alignment suite. ClinicalLab includes <b>ClinicalBench</b>,
+                an end-to-end multi-departmental clinical diagnostic evaluation benchmark for evaluating medical agents
+                and LLMs. ClinicalBench is based on real cases that cover <b>24</b> departments and <b>150</b> diseases.
+                We ensure that ClinicalBench does not have data leakage. ClinicalLab also includes four novel metrics
+                (<b>ClinicalMetrics</b>) for evaluating the effectiveness of LLMs in clinical diagnostic tasks. We
+                evaluate <b>17</b> general and medical-domain LLMs and find that their performance varies significantly
+                across different departments. Based on these findings, in ClinicalLab, we propose <b>ClinicalAgent</b>,
+                an end-to-end clinical agent that aligns with real-world clinical diagnostic practices. We
+                systematically investigate the performance and applicable scenarios of variants of ClinicalAgent on
+                ClinicalBench. Our findings demonstrate the importance of aligning with modern medical practices in
+                designing medical agents.
+            </p>
+            <br><br>
+            <div class="layui-btn-container">
+                <button type="button" class="layui-btn layui-btn-fluid"
+                        onclick="window.location.href='谷歌问卷'"><i class="layui-icon layui-icon-release"></i>&nbsp;&nbsp;Apply for Data
+                </button>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+</div>
+<!-- 页脚部分 -->
+<div class="ws-footer">
+    <div class="layui-container">
+        <div class="permission">
+            <p>© 2023 - 2024 Vaneval AI</p>
+        </div>
+    </div>
+</div>
+<script src="static/layui/layui.js"></script>
+<script src="static/js/echarts.min.js"></script>
+<script src="static/js/macarons.js"></script>
+<script src="static/js/main.js"></script>
+<script src="static/js/data.js"></script>
+</body>
+</html>
