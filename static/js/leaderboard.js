@@ -1,5 +1,5 @@
-layui.use(['jquery'], function () {
-    var $ = layui.jquery;
+layui.use(function () {
+    var $ = layui.$;
 
     $(document).ready(function () {
         // 加载温度图数据

@@ -38,7 +38,7 @@
                     </a>
                 </li>
                 <li class="layui-nav-item">
-                    <a href="javascript:;" class="layui-font-16" target="_blank">
+                    <a href="https://arxiv.org/abs/2406.13890" class="layui-font-16" target="_blank">
                         <i class="layui-icon layui-icon-file-b layui-font-16"></i>&nbsp;&nbsp;Paper
                     </a>
                 </li>
@@ -53,7 +53,7 @@
                     </a>
                 </li>
                 <li class="layui-nav-item">
-                    <a href="#submission" class="layui-font-16">
+                    <a href="submission.html" class="layui-font-16">
                         <i class="layui-icon layui-icon-upload-drag layui-font-16"></i>&nbsp;&nbsp;Submission
                     </a>
                 </li>
@@ -116,7 +116,7 @@
                         onclick="window.location.href='data.html'">📋&nbsp;&nbsp;Data
                 </button>
                 <button type="button" class="layui-btn layui-btn-radius layui-btn-primary layui-border-red"
-                        onclick="window.location.href='javascript:;'">📃&nbsp;&nbsp;Paper
+                        onclick="window.location.href='https://arxiv.org/abs/2406.13890'">📃&nbsp;&nbsp;Paper
                 </button>
                 <button type="button" class="layui-btn layui-btn-radius layui-btn-primary layui-border-purple"
                         onclick="window.location.href='https://github.com/WeixiangYAN/ClinicalLab'"><i
@@ -129,50 +129,23 @@
             <br>
             <div class="citation-container">
                 <pre class="citation-box" id="citation-text">
-@misc{yan2023codescope,
-      title={CodeScope: An Execution-based Multilingual Multitask Multidimensional Benchmark for Evaluating LLMs on Code Understanding and Generation},
-      author={Weixiang Yan and Haitian Liu and Yunkun Wang and Yunzhe Li and Qian Chen and Wen Wang and Tingyu Lin and Weishan Zhao and Li Zhu and Shuiguang Deng and Hari Sundaram},
-      year={2023},
-      eprint={2311.08588},
+@misc{yan2024clinicallabaligningagentsmultidepartmental,
+      title={ClinicalLab: Aligning Agents for Multi-Departmental Clinical Diagnostics in the Real World},
+      author={Weixiang Yan and Haitian Liu and Tengxiao Wu and Qian Chen and Wen Wang and Haoyuan Chai and Jiayi Wang and Weishan Zhao and Yixin Zhang and Renjun Zhang and Li Zhu},
+      year={2024},
+      eprint={2406.13890},
       archivePrefix={arXiv},
-      primaryClass={cs.CL}
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2406.13890},
 }</pre>
                 <button id="citation-btn" onclick="copyToClipboard()">Copy</button>
             </div>
-        </div>
-        <div class="section" id="submission">
-            <h1>Submission</h1>
-            <br>
-            <p>
-                When you build an LLM that meets your expectations, you can submit your test results for official
-                reporting.
-                To submit your model evaluation results on CodeScope, please submit the following information:
-            </p>
-            <div class="layui-text layui-font-18" style="padding-left: 20px; line-height: 150%; text-align: justify;">
-                <ol>
-                    <li>The evaluation results of your LLM on each task of the CodeScope benchmark, please follow the
-                        evaluation metrics in our paper.
-                    </li>
-                    <li>Individual/Team Organization: The name of the organization where the individual or team appears
-                        in the leaderboard.
-                    </li>
-                    <li>Information about your LLM: The name of the LLM that appears in the leaderboard.</li>
-                    <li>Your paper information: If the LLM is from a published work, the name and URL of the paper will
-                        appear on the leaderboard.
-                    </li>
-                </ol>
-            </div>
-            <p>
-                Submit the above information by email to
-                <a href="mailto:yanweixiang.ywx@gmail.com" class="ext-link">yanweixiang.ywx@gmail.com</a>
-                and we will respond to your email within 72 hours.
-            </p>
         </div>
         <div class="section" id="contact-us">
             <h1>Contact Us</h1>
             <br>
             <p>
-                Have any questions about CodeScope? Please contact us at
+                Have any questions about ClinicalLab? Please contact us at
                 <a href="mailto:yanweixiang.ywx@gmail.com" class="ext-link">yanweixiang.ywx@gmail.com</a>
                 or create an issue on
                 <a href="https://github.com/WeixiangYAN/ClinicalLab" class="ext-link" target="_blank">Github</a>.
@@ -182,13 +155,13 @@
     <br><br><br><br>
 </div>
 <!-- 页脚部分 -->
-<div class="ws-footer">
+<!--<div class="ws-footer">
     <div class="layui-container">
         <div class="permission">
             <p>© 2023 - 2024 Vaneval AI</p>
         </div>
     </div>
-</div>
+</div>-->
 <script src="static/layui/layui.js"></script>
 <script src="static/js/main.js"></script>
 <script src="static/js/index.js"></script>

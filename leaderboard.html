@@ -38,7 +38,7 @@
                     </a>
                 </li>
                 <li class="layui-nav-item">
-                    <a href="javascript:;" class="layui-font-16" target="_blank">
+                    <a href="https://arxiv.org/abs/2406.13890" class="layui-font-16" target="_blank">
                         <i class="layui-icon layui-icon-file-b layui-font-16"></i>&nbsp;&nbsp;Paper
                     </a>
                 </li>
@@ -53,7 +53,7 @@
                     </a>
                 </li>
                 <li class="layui-nav-item">
-                    <a href="index.html#submission" class="layui-font-16">
+                    <a href="submission.html" class="layui-font-16">
                         <i class="layui-icon layui-icon-upload-drag layui-font-16"></i>&nbsp;&nbsp;Submission
                     </a>
                 </li>
@@ -74,10 +74,10 @@
             <h1>ClinicalBench</h1>
             <br>
             <p>
-                CodeScope, an execution-based, multilingual, multi-task, multi-dimensional evaluation benchmark for
-                comprehensively gauging LLM capabilities on coding tasks. CodeScope covers 43 programming languages and
-                8 coding tasks. It evaluates the coding performance of LLMs from three dimensions (perspectives):
-                difficulty, efficiency, and length.
+                ClinicalBench, an end-to-end multi-departmental clinical diagnostic evaluation benchmark for effectively and comprehensively evaluating the clinical diagnostic capabilities of LLMs.
+                ClinicalBench is based on real cases that cover 24 departments and 150 diseases. ClinicalBench consists of 8 clinical diagnostic tasks. We ensure that ClinicalBench does not have data
+                leakage. We evaluate the clinical diagnostic capabilities of LLMs in two dimensions. The task dimension measures the performance of each model in different tasks, while the department
+                dimension evaluates the performance difference of each model across various medical specialties.
             </p>
             <div id="echarts-heatmap" style="width: 100%; height:500px; padding-top: 50px;"></div>
             <br><br>
@@ -234,10 +234,9 @@
             <h1>ClinicalAgent</h1>
             <br>
             <p>
-                CodeScope, an execution-based, multilingual, multi-task, multi-dimensional evaluation benchmark for
-                comprehensively gauging LLM capabilities on coding tasks. CodeScope covers 43 programming languages and
-                8 coding tasks. It evaluates the coding performance of LLMs from three dimensions (perspectives):
-                difficulty, efficiency, and length.
+                We propose ClinicalAgent, an End-to-End Clinical Agent Aligned with Real-World Multi-Departmental Clinical Diagnostic Practices. ClinicalAgent covers the entire process starting from
+                the moment a patient enters the clinic and ending when the patient is discharged, which includes six key steps: 1) department guide; 2) preliminary consultation; 3) laboratory
+                examination; 4) imageological examination; 5) final consultation; 6) medical treatment.
             </p>
             <div id="echarts-radar" style="width: 100%; height:500px; padding-top: 50px;"></div>
             <br><br>
@@ -322,10 +321,8 @@
             <h1>ClinicalMetrics</h1>
             <br>
             <p>
-                CodeScope, an execution-based, multilingual, multi-task, multi-dimensional evaluation benchmark for
-                comprehensively gauging LLM capabilities on coding tasks. CodeScope covers 43 programming languages and
-                8 coding tasks. It evaluates the coding performance of LLMs from three dimensions (perspectives):
-                difficulty, efficiency, and length.
+                We propose four novel metrics to precisely measure the effectiveness of LLMs in department guidance and their clinical diagnostic capabilities. These metrics are Department Win Rate
+                (DWR), Department Instruction Following Rate (DIFR), Comprehensive Diagnostic Accuracy (CDA), and Acceptability.
             </p>
             <div id="echarts-line" style="width: 100%; height:500px; padding-top: 50px;"></div>
         </div>
@@ -333,13 +330,13 @@
     <br><br><br><br>
 </div>
 <!-- 页脚部分 -->
-<div class="ws-footer">
+<!--<div class="ws-footer">
     <div class="layui-container">
         <div class="permission">
             <p>© 2023 - 2024 Vaneval AI</p>
         </div>
     </div>
-</div>
+</div>-->
 <script type="text/html" id="table-templet-model">
     <a href="{{ d.url }}" target="_blank" style="font-size: 14px;"><b>{{ d.model }}</b></a>
 </script>
